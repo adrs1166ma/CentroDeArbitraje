@@ -2,27 +2,44 @@
 
 Este proyecto es la página web oficial del **Centro de Arbitraje CEAR** de la **Cámara Nacional de Comercio del Perú**. El sitio tiene como objetivo ofrecer soluciones especializadas en arbitraje comercial y estatal, garantizando imparcialidad, eficiencia y transparencia.
 
-## Descripción
+## Descripción del Proyecto
 
-La página web del Centro de Arbitraje CEAR está diseñada para proporcionar información sobre los servicios de arbitraje ofrecidos, así como para facilitar el acceso a la información de contacto y a los procedimientos de arbitraje. El proyecto utiliza **Node.js** y **Sass** en su desarrollo, y el flujo de trabajo de desarrollo está gestionado con **Gulp**.
+La página web del **Centro de Arbitraje CEAR** está diseñada para proporcionar información sobre los servicios de arbitraje ofrecidos, facilitar el acceso a la información de contacto, y brindar a los usuarios una plataforma para conocer los procedimientos de arbitraje.
 
-## Características
+## Descripción Técnica
 
-- Soluciones especializadas en controversias contractuales y comerciales
-- Implementación de altos estándares de probidad y transparencia
-- Optimización de imágenes y recursos CSS
-- Compilación de Sass y automatización de tareas con Gulp
+El proyecto utiliza **Node.js** como entorno de ejecución del servidor y **Sass** para la gestión de estilos. Además, el flujo de trabajo de desarrollo está automatizado con **Gulp**, que se encarga de tareas como la compilación de **SCSS** a **CSS**, optimización de imágenes y minificación de archivos.
+
+## Características del Servicio
+
+✅ Soluciones especializadas en controversias contractuales y comerciales.
+
+✅ Implementación de altos estándares de probidad y transparencia en los procesos de arbitraje.
+
+✅ Acceso fácil a información sobre procedimientos y contacto directo con expertos en arbitraje.
+
+## Características Técnicas del Proyecto
+
+✅ Optimización de imágenes para mejorar el rendimiento del sitio.
+
+✅ Compilación de **Sass a CSS** para la gestión eficiente de estilos.
+
+✅ Automatización de tareas de desarrollo mediante **Gulp**, como la minificación de archivos y la conversión de imágenes a **formato WebP**.
 
 ## Requisitos previos
 
 Asegúrate de tener instalados los siguientes programas:
 
-[![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/) **(versión recomendada: 14.x o superior)**
+[![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/) 
 
-[![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)](https://gulpjs.com/) **Si no lo tienes instalado globalmente, puedes instalarlo ejecutando:**
+**(versión recomendada: 14.x o superior)**
+
+[![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)](https://gulpjs.com/) 
+
+**Si no lo tienes instalado globalmente, puedes instalarlo ejecutando:**
 
   ```bash
-  npm install --global gulp-cli
+  npm install --save-dev gulp
   ```
 
 ## Instalación
