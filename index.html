@@ -10,34 +10,46 @@
 </head>
 <body>
 
-    <header class="header inicio">
-        <div class="contenedor">
+    <header class="header">
+        <div class="contenedor-header">
             <div class="barra">
-                <a href="/">
-                    <img class="logo" src="build/img/logoblanco.png" alt="Logo Centro de Arbitraje">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                <div class="barra__header">
+                    <div class="barra__img">
+                        <a href="/">
+                            <img class="logo" src="build/img/logoblanco.png" alt="Logo Centro de Arbitraje">
+                        </a>
+                    </div>    
+                    <div class="mobile-menu">
+                        <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div>
                 </div>
-
-                <div class="derecha">
-                    <!-- <img class="dark-mode-boton" src="build/img/dark-mode.svg"> -->
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="servicios.html">Servicios</a>
-                        <a href="nominaDeArbitros.html">Nómina de Árbitros</a>
-                        <a href="escuelaDeArbitraje.html">Escuela de Arbitraje</a>
-                        <a href="contactenos.html">Contactenos</a>
+                <div class="barra__footer">
+                    <nav class="contenido__navegacion">
+                        <div class="c-nav"><div class="c2-nav"><a href="nosotros.html"><div class="c3-nav"><p>Nosotros</p></div></a></div></div>
+                        <div class="c-nav"><div class="c2-nav"><a href="servicios.html"><div class="c3-nav"><p>Servicios</p></div></a></div></div>
+                        <div class="c-nav"><div class="c2-nav"><a href="nominaDeArbitros.html"><div class="c3-nav"><p>Nómina de Árbitros</p></div></a></div></div>
+                        <div class="c-nav"><div class="c2-nav"><a href="escuelaDeArbitraje.html"><div class="c3-nav"><p>Escuela de Arbitraje</p></div></a></div></div>
+                        <div class="c-nav"><div class="c2-nav"><a href="contactenos.html"><div class="c3-nav"><p>Contactenos</p></div></a></div></div>
                     </nav>
                 </div>
-            </div> <!-- .barra  -->
-
-            <h1>Bienvenido</h1>
-            <p>El centro de arbitraje de la CNCP ofrece servicios como el centro de conciliación y asesoría legal, entre otros.</p>
-
+            </div><!-- .barra  -->
         </div>
     </header>
+    
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h1>Bienvenido</h1>
+                <p>El centro de arbitraje de la CNCP ofrece servicios como el centro de conciliación y asesoría legal, entre otros.</p>
+                
+            </div>
+        </div>
+        <video controls autoplay muted loop>
+            <source src="video/dj.mp4" type="video/mp4">
+            <source src="video/dj.ogv" type="video/ogv">
+            <source src="video/dj.webm" type="video/webm">
+        </video>
+    </div>
 
     <main class="contenedor seccion">
         <h1>Titulo Página</h1>
