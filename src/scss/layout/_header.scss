@@ -21,7 +21,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    padding:0.5rem;
+    padding: 1.8rem 0;
     flex-wrap: nowrap;
     height: min-content;
     position: relative;
@@ -47,7 +47,7 @@
         align-items: center;
     }
 
-    .barra__header {
+    .barra-arriba {
         transform: none;
         transform-origin: 50% 50% 0px;
         display: flex;
@@ -60,7 +60,7 @@
         padding: 0;
         position: relative;
 
-        .barra__img {
+        .barra-img {
             transform: none;
             transform-origin: 50% 50% 0px;
             height: auto;
@@ -114,10 +114,10 @@
             }
         }
     }
-    .barra__footer {
+    .barra-abajo {
         transform: none;
         transform-origin: 50% 50% 0px;
-        display: flex;
+        display: none;
         align-items: flex-start;
         flex-direction: column;
         gap: 2.4rem;
@@ -127,101 +127,25 @@
         height: min-content;
         padding: 0;
         position: relative;
+        z-index: 8;
+        
 
         @include tablet {
+            transform: none;
             
+            display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: flex-end;
         }
         
-        .contenido__navegacion {
-            transform: none;
-            transform-origin: 50% 50% 0px;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            flex-wrap: nowrap;
-            gap: 0.4rem;
-            height: min-content;
-            justify-content: flex-start;
-            padding: 0;
-            position: relative;
-
-            @include tablet {
-                flex-direction: row;
-                justify-content: flex-end;
-            }
-
-            .c-nav {
-                transform: none;
-                transform-origin: 50% 50% 0px;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                gap: 1rem;
-                height: min-content;
-                justify-content: center;
-                padding: 0;
-                position: relative;
-                width: min-content;
-
-                .c2-nav{
-                    transform: none;
-                    transform-origin: 50% 50% 0px;
-                    display: block;
-                    height: 3.2rem;
-                    position: relative;
-                    width: auto;
-
-                    a {
-                        display: flex;
-                        align-items: center;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        gap: 0.4rem;
-                        justify-content: center;
-                        height: 100%;
-                        padding: 0.8rem 1.2rem;
-                        position: relative;
-                        width: min-content;
-
-                        .c3-nav {
-                            outline: none;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-start;
-                            flex-shrink: 0;
-                            transform: none;
-                            transform-origin: 50% 50% 0px;
-                            opacity: 1;
-                            height: auto;
-                            position: relative;
-                            white-space: pre;
-                            width: auto;
-
-                            p {
-                                font-size: 1.4rem;
-                                line-height: 1.6rem;
-                                margin: 0px;
-                                padding: 0px;
-                                color: $rosa;
-                                font-weight: $bold;
-                            }
-                            p:hover {
-                                color: $blanco;
-                            }
-                        }
-                    }
-                }
-            }
-            
-            
-        }
+        
     }
 
+}
+
+.mostrar {
+    display: flex !important; 
 }
 
 
@@ -234,3 +158,11 @@
     max-width: 60rem;
 }
 
+// .panel {
+//     transform: translateY(-26rem) !important;
+// }
+
+// .panel.is-active {
+//     transition: .4s ease;
+//     transform: translateY(0) !important;
+// }

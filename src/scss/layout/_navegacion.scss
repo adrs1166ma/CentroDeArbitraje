@@ -1,20 +1,204 @@
+/** Parte footer ⬆️ **/
+.c-nav {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+    height: min-content;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+.c1-nav {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    height: min-content;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: min-content;
+
+}
+.c2-nav{
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    display: block;
+    height: 3.2rem;
+    position: relative;
+    width: auto;
+
+    a {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.4rem;
+        justify-content: center;
+        height: 100%;
+        padding: 0.8rem 1.2rem;
+        position: relative;
+        width: min-content;
+    }
+}
+.c3-nav {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin: 0px;
+        padding: 0px;
+        color: $rosa;
+        font-weight: $bold;
+    }
+    p:hover {
+        color: $blanco;
+    }
+}
+
+/** Parte footer ⬇️ **/
+.c-nav-f {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    gap: 3.2rem;
+    width: 100%;
+
+    @include tablet {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8rem;
+        height: min-content;
+        justify-content: flex-start;
+        padding: 0;
+        position: relative;
+    }
+}
+.c1-nav-f {
+    opacity: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.6rem;
+    height: min-content;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: min-content;
+
+}
+.t-nav-f {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: relative;
+    width: auto;
+    p {
+        color: $rosa;
+        font-size: 1.8rem;
+        font-weight: $bold;
+        line-height: 1.6rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+}
+.c2-nav-f {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: relative;
+    width: auto;
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin: 0px;
+        padding: 0px;
+
+        a {
+            color: $rojoClaro;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: $regular;
+            letter-spacing: normal;
+            line-height: 1.6rem;
+
+            text-align: start;
+            text-decoration-line: underline;
+            text-decoration-color: rgb(242, 111, 111);
+            text-decoration-style: solid;
+            text-decoration-thickness: 0.1rem;
+            text-transform: none;
+            text-underline-offset: 5px;
+            text-wrap-mode: nowrap;
+            text-wrap-style: auto;
+
+            transition-behavior: normal;
+            transition-delay: 0s;
+            transition-duration: 0.3s;
+            transition-property: color;
+            transition-timing-function: cubic-bezier(0.12, 0.23, 0.5, 1);
+            white-space-collapse: preserve;            
+        }
+        a:hover {
+            color: $blanco;
+        }
+    }
+}        
 
 /** Menu de hamburguesa **/
 .mobile-menu {
     @include tablet {
         display: none;
     }
+    position: relative;
 }
-
-.mostrar {
-    visibility: visible;
-    opacity: 1;
-    height: auto;
-}
-
+/** logo **/
 .logo {
     width: 20rem;
     filter: drop-shadow(
     0 0 10px rgba(0, 0, 0, .8)
     )
 }
+/**  **/
+.mostrar {
+    display: flex;
+}
+

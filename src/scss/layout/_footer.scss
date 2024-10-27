@@ -1,6 +1,5 @@
 .footer {
     background-color: $rojoOscuro;
-
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -8,221 +7,110 @@
     width: 100%;
     opacity: 1;
 
-    .contenedor-footer {    
-        opacity: 1;
-        width: 100%;
-        opacity: 1;
-        padding: 4rem 2.4rem 3.2rem;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 4.8rem;
-        height: min-content;
-        justify-content: center;
-        overflow: hidden;
-        position: relative;
-
-        .footer-header {
-            opacity: 1;
-            gap: 4rem;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            height: min-content;
-            justify-content: flex-start;
-            overflow: visible;
-            padding: 0;
-            position: relative;
-            width: 100%;
-            
-            .footer-img {
-                
-                flex-shrink: 0;
-                opacity: 1;
-                flex: none;
-                width: 20rem;
-                position: relative;
-            }
-
-            .footer-navegacion {
-                display: flex;
-                opacity: 1;
-                flex-direction: column;
-                gap: 3.2rem;
-                width: 100%;
-
-                @include tablet {
-                    align-items: flex-start;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    gap: 8rem;
-                    height: min-content;
-                    justify-content: flex-start;
-                    padding: 0;
-                    position: relative;
-                    
-
-                }
-                
-
-                .contenido-nav--footer {
-                    opacity: 1;
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    gap: 1.6rem;
-                    height: min-content;
-                    justify-content: center;
-                    padding: 0;
-                    position: relative;
-                    width: min-content;
-                    .title-nav__footer {
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        transform: none;
-                        opacity: 1;
-                        height: auto;
-                        position: relative;
-                        width: auto;
-                        p {
-                            color: $rosa;
-                            font-size: 1.8rem;
-                            font-weight: $bold;
-                            line-height: 1.6rem;
-                            margin: 0px;
-                            padding: 0px;
-                        }
-                        
-                    }
-                    .a-footer {
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        transform: none;
-                        opacity: 1;
-                        height: auto;
-                        position: relative;
-                        width: auto;
-                        p {
-                            font-size: 1.4rem;
-                            line-height: 1.6rem;
-                            margin: 0px;
-                            padding: 0px;
-
-                            a {
-                                color: $rojoClaro;
-                                box-sizing: border-box;
-                                cursor: pointer;
-                                font-weight: $regular;
-                                letter-spacing: normal;
-                                line-height: 1.6rem;
-
-                                text-align: start;
-                                text-decoration-line: underline;
-                                text-decoration-color: rgb(242, 111, 111);
-                                text-decoration-style: solid;
-                                text-decoration-thickness: 0.1rem;
-                                text-transform: none;
-                                text-underline-offset: 5px;
-                                text-wrap-mode: nowrap;
-                                text-wrap-style: auto;
-
-                                transition-behavior: normal;
-                                transition-delay: 0s;
-                                transition-duration: 0.3s;
-                                transition-property: color;
-                                transition-timing-function: cubic-bezier(0.12, 0.23, 0.5, 1);
-                                white-space-collapse: preserve;
-                                
-                                
-                            }
-                            a:hover {
-                                color: $blanco;
-                            }
-                        }
-                    }        
-                }
-            }
-        }
-        .footer-footer {
-            opacity: 1;
-            display: flex;
-            align-items: flex-start;
-            align-content: flex-start;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            height: min-content;
-            justify-content: flex-start;
-            overflow: visible;
-            padding: 0;
-            position: relative;
-            width: 100%;
-            z-index: 8;
-            
-            .contenedor-copyright {
-                outline: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                flex-shrink: 0;
-                transform: none;
-                opacity: 1;
-                order: 1;
-                height: auto;
-                position: relative;
-                user-select: none;
-                white-space: pre-line;
-                width: auto;
-
-            }
-
+}
+.contenedor-footer {    
+    opacity: 1;
+    width: 100%;
+    opacity: 1;
+    padding: 4rem 2.4rem 3.2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4.8rem;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.footer-arriba {
+    opacity: 1;
+    gap: 4rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;    
+}
+.footer-img {
     
-        }
-        .copyright {
-            color: $rojoClaro;
-            text-align: left;
-            font-size: 12px;
-            margin: 0;
-            padding: 0;
+    flex-shrink: 0;
+    opacity: 1;
+    flex: none;
+    width: 20rem;
+    position: relative;
+}
 
-            a {
-                color: $blanco;
-                box-sizing: border-box;
-                cursor: pointer;
-                font-weight: $regular;
-                letter-spacing: normal;
-                line-height: 1.6rem;
+/** copyright **/
+.footer-abajo {
+    opacity: 1;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 8;
+    
+}
+.contenedor-copyright {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-shrink: 0;
+    transform: none;
+    opacity: 1;
+    order: 1;
+    height: auto;
+    position: relative;
+    user-select: none;
+    white-space: pre-line;
+    width: auto;
+}
+.copyright {
+    color: $rojoClaro;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 
-                text-align: start;
-                text-decoration-line: underline;
-                text-decoration-color: rgb(242, 111, 111);
-                text-decoration-style: solid;
-                text-decoration-thickness: 0.1rem;
-                text-transform: none;
-                text-underline-offset: 5px;
-                text-wrap-mode: nowrap;
-                text-wrap-style: auto;
+    a {
+        color: $blanco;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: $regular;
+        letter-spacing: normal;
+        line-height: 1.6rem;
 
-                transition-behavior: normal;
-                transition-delay: 0s;
-                transition-duration: 0.3s;
-                transition-property: color;
-                transition-timing-function: cubic-bezier(0.12, 0.23, 0.5, 1);
-                white-space-collapse: preserve;
-            }
-            a:hover {
-                color: $rojoClaro;
-            }
-            
-        }
+        text-align: start;
+        text-decoration-line: underline;
+        text-decoration-color: rgb(242, 111, 111);
+        text-decoration-style: solid;
+        text-decoration-thickness: 0.1rem;
+        text-transform: none;
+        text-underline-offset: 5px;
+        text-wrap-mode: nowrap;
+        text-wrap-style: auto;
+
+        transition-behavior: normal;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.12, 0.23, 0.5, 1);
+        white-space-collapse: preserve;
     }
-
+    a:hover {
+        color: $rojoClaro;
+    }
 }
