@@ -64,6 +64,46 @@
             display: block;
             unicode-bidi: isolate;
         }
+        .mobile-menu {
+            transform: none;
+            transform-origin: 50% 50% 0px;
+            height: 4.0rem;
+            position: relative;
+            width: 4.0rem;
+            
+            .mm1 {
+                height: 100%;
+                width: 100%;
+                transform: none;
+                transform-origin: 50% 50% 0px;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                gap: 1.0rem;
+                cursor: pointer;
+                justify-content: center;
+                padding: 0;
+                position: relative;
+
+                .mm2 {
+                    transform: none;
+                    transform-origin: 50% 50% 0px;
+                    position: relative;
+                    height: 3.6rem;
+                    width: 3.6rem;
+                    
+                    img {
+                        height: 3.6rem;
+                        width: 3.6rem;
+                    }
+                }
+
+
+
+            }
+        }
     }
     .barra__footer {
         transform: none;
@@ -172,3 +212,4 @@
     line-height: 2;
     max-width: 60rem;
 }
+
