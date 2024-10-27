@@ -21,7 +21,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1.8rem 0 3.2rem;
+    padding:0.5rem;
     flex-wrap: nowrap;
     height: min-content;
     position: relative;
@@ -41,6 +41,11 @@
     justify-content: flex-start;
     padding: 0 2.4rem;
     position: relative;
+
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+    }
 
     .barra__header {
         transform: none;
@@ -70,6 +75,10 @@
             height: 4.0rem;
             position: relative;
             width: 4.0rem;
+
+            @include tablet {
+                display: none;
+            }
             
             .mm1 {
                 height: 100%;
@@ -118,6 +127,13 @@
         height: min-content;
         padding: 0;
         position: relative;
+
+        @include tablet {
+            
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
         
         .contenido__navegacion {
             transform: none;
@@ -132,6 +148,11 @@
             justify-content: flex-start;
             padding: 0;
             position: relative;
+
+            @include tablet {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
 
             .c-nav {
                 transform: none;
