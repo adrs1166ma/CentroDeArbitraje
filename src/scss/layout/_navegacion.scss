@@ -73,11 +73,11 @@
         line-height: 1.6rem;
         margin: 0px;
         padding: 0px;
-        color: $rojoClaro;
+        color: $blanco;
         font-weight: $bold;
     }
     p:hover {
-        color: $blanco;
+        color: $rojoClaro;
     }
     p::selection {
         background-color: $rosa;
@@ -138,6 +138,7 @@
     }
     p::selection {
         background-color: $rosa;
+        color: $blanco;
     }
     
 }
@@ -188,6 +189,7 @@
         }
         a::selection {
             background-color: $rosa;
+            color: $blanco;
         }
     }
 }        

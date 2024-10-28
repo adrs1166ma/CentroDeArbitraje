@@ -6,7 +6,6 @@
     object-fit: cover;
 
     .overlay {
-        gap: none;
         position: absolute;
         background: linear-gradient(
         270deg,
@@ -16,6 +15,7 @@
         inset: 0;
         display: flex;
         align-items: center;
+        
     }
     video {
         min-width: 100%;
@@ -31,19 +31,27 @@
     }
 }
 .contenido-video {
-    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0.8rem 0;
     z-index: 5;
     h1 {
+        padding-left: 1.6rem;
+        display: flex;
+        text-align: start;
         font-weight: $bold;
         font-size: 7rem;
         margin: 0;
+        display: block;
+
     }
     p {
         color: $blanco;
-        display: inline-block;
         padding: 1rem 2rem;
         font-weight: $regular;
         font-size: 1.5rem;
         margin: 0;
+        display: block;
     }
 }
