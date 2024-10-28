@@ -1,0 +1,49 @@
+.video {
+    position: relative;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden ;
+    object-fit: cover;
+
+    .overlay {
+        gap: none;
+        position: absolute;
+        background: linear-gradient(
+        270deg,
+        rgba(#343a40, 60%),
+        rgba( darken(#343a40, 20%), 90%),
+        );
+        inset: 0;
+        display: flex;
+        align-items: center;
+    }
+    video {
+        min-width: 100%;
+        min-height: 100vh;
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+        display: block;
+        width: auto;
+        @include desktop {
+            width: 100%;
+        }
+    }
+}
+.contenido-video {
+    width: auto;
+    z-index: 5;
+    h1 {
+        font-weight: $bold;
+        font-size: 7rem;
+        margin: 0;
+    }
+    p {
+        color: $blanco;
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-weight: $regular;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}

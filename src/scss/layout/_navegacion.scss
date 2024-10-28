@@ -1,4 +1,4 @@
-/** Parte footer ⬆️ **/
+/** Parte header ⬆️ **/
 .c-nav {
     transform: none;
     transform-origin: 50% 50% 0px;
@@ -73,11 +73,14 @@
         line-height: 1.6rem;
         margin: 0px;
         padding: 0px;
-        color: $rosa;
+        color: $rojoClaro;
         font-weight: $bold;
     }
     p:hover {
         color: $blanco;
+    }
+    p::selection {
+        background-color: $rosa;
     }
 }
 
@@ -126,12 +129,15 @@
     position: relative;
     width: auto;
     p {
-        color: $rosa;
+        color: $rojoClaro;
         font-size: 1.8rem;
         font-weight: $bold;
         line-height: 1.6rem;
         margin: 0px;
         padding: 0px;
+    }
+    p::selection {
+        background-color: $rosa;
     }
     
 }
@@ -180,6 +186,9 @@
         a:hover {
             color: $blanco;
         }
+        a::selection {
+            background-color: $rosa;
+        }
     }
 }        
 
@@ -203,5 +212,15 @@
 }
 
 .contenedor {
-    padding-top: 40rem;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    max-width: 100% !important;
+    
+    padding-top: 10rem;
 }
+

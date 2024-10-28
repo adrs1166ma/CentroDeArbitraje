@@ -10,8 +10,8 @@
 }
 
 .contenedor-header {
-    border-width: 0px 0px 0.1rem 0px;
-    border-color: $rojoClaro;
+    border-width: 0px 0px 0.3rem 0px;
+    border-color: #900a0a;//#a20909
     border-style: solid;
     width: 100%;
     transform: none;
@@ -47,101 +47,98 @@
         align-items: center;
     }
 
-    .barra-arriba {
-        transform: none;
-        transform-origin: 50% 50% 0px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        height: min-content;
-        padding: 0;
-        position: relative;
+    
+}
+.barra-arriba {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    padding: 0;
+    position: relative;
 
-        .barra-img {
-            transform: none;
-            transform-origin: 50% 50% 0px;
-            height: auto;
-            position: relative;
-            width: auto;
-            display: block;
-            unicode-bidi: isolate;
-        }
-        .mobile-menu {
-            transform: none;
-            transform-origin: 50% 50% 0px;
-            height: 4.0rem;
-            position: relative;
-            width: 4.0rem;
+}
+.barra-img {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    height: auto;
+    position: relative;
+    width: auto;
+    display: block;
+    unicode-bidi: isolate;
+}
+.mobile-menu {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    height: 4.0rem;
+    position: relative;
+    width: 4.0rem;
 
-            @include tablet {
-                display: none;
-            }
-            
-            .mm1 {
-                height: 100%;
-                width: 100%;
-                transform: none;
-                transform-origin: 50% 50% 0px;
-                aspect-ratio: 1 / 1;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                align-items: center;
-                gap: 1.0rem;
-                cursor: pointer;
-                justify-content: center;
-                padding: 0;
-                position: relative;
-
-                .mm2 {
-                    transform: none;
-                    transform-origin: 50% 50% 0px;
-                    position: relative;
-                    height: 3.6rem;
-                    width: 3.6rem;
-                    
-                    img {
-                        height: 3.6rem;
-                        width: 3.6rem;
-                    }
-                }
-
-
-
-            }
-        }
-    }
-    .barra-abajo {
-        transform: none;
-        transform-origin: 50% 50% 0px;
+    @include tablet {
         display: none;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 2.4rem;
-        justify-content: flex-start;
-        width: 100%;
-        flex-wrap: nowrap;
-        height: min-content;
-        padding: 0;
-        position: relative;
-        z-index: 8;
-        
-
-        @include tablet {
-            transform: none;
-            
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        
-        
     }
+    
+}
+.mm1 {
+    height: 100%;
+    width: 100%;
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.0rem;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0;
+    position: relative;
 
+}
+.mm2 {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    position: relative;
+    height: 3.6rem;
+    width: 3.6rem;
+    
+    img {
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+}
+.barra-abajo {
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: min-content;
+    padding: 0;
+    position: relative;
+    z-index: 8;
+    
+
+    @include tablet {
+        transform: none;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    
 }
 
 .mostrar {

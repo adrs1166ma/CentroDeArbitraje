@@ -113,4 +113,7 @@
     a:hover {
         color: $rojoClaro;
     }
+    a::selection {
+        background-color: #9F140F;
+    }
 }
