@@ -1,5 +1,5 @@
 .footer {
-    background-color: $rojoOscuro;
+    background-color: $red-a9;
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -79,14 +79,14 @@
     width: auto;
 }
 .copyright {
-    color: $rojoClaro;
+    color: $red-8;
     text-align: left;
     font-size: 12px;
     margin: 0;
     padding: 0;
 
     a {
-        color: $blanco;
+        color: $red-1;
         box-sizing: border-box;
         cursor: pointer;
         font-weight: $regular;
@@ -94,8 +94,9 @@
         line-height: 1.6rem;
 
         text-align: start;
+        text-decoration: underline !important;
         text-decoration-line: underline;
-        text-decoration-color: rgb(242, 111, 111);
+        text-decoration-color: $red-8;
         text-decoration-style: solid;
         text-decoration-thickness: 0.1rem;
         text-transform: none;
@@ -112,6 +113,7 @@
     }
     a:hover {
         color: $rojoClaro;
+        text-decoration: none !important;
     }
     a::selection {
         background-color: #9F140F;

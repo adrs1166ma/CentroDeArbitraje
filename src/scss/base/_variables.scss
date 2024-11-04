@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Fuentes
-$fuente_principal: 'Lato', sans-serif;
+$fuente_principal: 'Inter', sans-serif;
 
 // Tamaño de Media Queries
 $telefono: 480px;
 $tablet: 768px;
 $desktop: 1024px;
 
-// Colores
+// Colores Globales
 $negro: #000000;
-$amarillo: #f5a425;;
+$amarillo: #f5a425;
+;
 $verde: #71B100;
 $blanco: #ffffff;
 $gris: #8D8D8D;
@@ -19,10 +20,46 @@ $rojoOscuro: #a31a13;
 $rojoClaro: #FF9080;
 $rosa: #E39589;
 
+// Utilidad de Separación
 $separacion: 5rem;
 
-// Fuentes
+// Estilos Tipográficos
 $delgada: 300;
 $regular : 400;
 $bold: 700;
-$black: 900
+$black: 900;
+
+// Colores Rojos - Escala Base
+$red-1: #fffcfc;
+$red-2: #fef8f7;
+$red-3: #fdece9;
+$red-4: #ffded8;
+$red-5: #fed0c9;
+$red-6: #f7c1b8;
+$red-7: #eeaea4;
+$red-8: #e39589; // footer
+$red-9: #a31a13; // 📌
+$red-10: #910000;
+$red-11: #c43e32;
+$red-12: #601f19; // selection f y h
+
+// Colores Rojos - Transparencias
+$red-a1: rgba(255, 0, 0, 0.012);
+$red-a2: rgba(224, 32, 0, 0.032);
+$red-a3: rgba(232, 35, 0, 0.083);
+$red-a4: rgba(255, 40, 0, 0.15);
+$red-a5: rgba(251, 34, 0, 0.204);
+$red-a6: rgba(227, 33, 0, 0.271);
+$red-a7: rgba(208, 29, 1, 0.35);
+$red-a8: rgba(195, 26, 0, 0.451);
+$red-a9: rgba(156, 8, 0, 0.883);
+$red-a10: rgba(145, 0, 0, 0.942);
+$red-a11: rgba(182, 15, 0, 0.773);
+$red-a12: rgba(79, 7, 0, 0.891);
+
+// Colores de Interfaz
+$red-contrast: #fff;
+$red-surface: #fef6f5cc;
+$red-indicator: #a31a13; // 📌
+$red-track: #a31a13;
+
