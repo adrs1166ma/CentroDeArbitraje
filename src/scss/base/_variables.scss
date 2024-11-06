@@ -74,117 +74,121 @@ $rojoOscuro: #a31a13; // Color Principal
 $rojoClaro: #FF9080;
 $rosa: #E39589;
 // Mapa de colores para el modo claro
-$colors-light: (
-    $red-1: #fffcfc, //Backgrounds
-    $red-2: #fef8f7, //Backgrounds
-    $red-3: #fdece9, // Interactive components
-    $red-4: #ffded8, // Interactive components
-    $red-5: #fed0c9, // Interactive components
-    $red-6: #f7c1b8, // Borders and separators
-    $red-7: #eeaea4, // Borders and separators
-    $red-8: #e39589, // Borders and separators
-    $red-9: #a31a13, // Solid colors 📌
-    $red-10: #910000, // Solid colors
-    $red-11: #c43e32, //Accessible text
-    $red-12: #601f19 //Accessible text - selección f y h
+//$colors-light: 
+$red-1: #fffcfc; //Backgrounds
+$red-2: #fef8f7; //Backgrounds
+$red-3: #fdece9; // Interactive components
+$red-4: #ffded8; // Interactive components
+$red-5: #fed0c9; // Interactive components
+$red-6: #f7c1b8; // Borders and separators
+$red-7: #eeaea4; // Borders and separators
+$red-8: #e39589; // Borders and separators
+$red-9: #a31a13; // Solid colors 📌
+$red-10: #910000; // Solid colors
+$red-11: #c43e32; //Accessible text
+$red-12: #601f19; //Accessible text - selección f y h
 
-    transparent: (a1: rgba(255, 0, 0, 0.012),
-        a2: rgba(224, 32, 0, 0.032),
-        a3: rgba(232, 35, 0, 0.083),
-        a4: rgba(255, 40, 0, 0.15),
-        a5: rgba(251, 34, 0, 0.204),
-        a6: rgba(227, 33, 0, 0.271),
-        a7: rgba(208, 29, 1, 0.35),
-        a8: rgba(195, 26, 0, 0.451),
-        a9: rgba(156, 8, 0, 0.883),
-        a10: rgba(145, 0, 0, 0.942),
-        a11: rgba(182, 15, 0, 0.773),
-        a12: rgba(79, 7, 0, 0.891),
-    ),
-    gray: (1: #fcfcfc,
-        2: #f9f9f9,
-        3: #efefef,
-        4: #e8e8e8,
-        5: #e0e0e0,
-        6: #d8d8d8,
-        7: #cecece,
-        8: #bbb,
-        9: #8d8d8d,
-        10: #838383,
-        11: #646464,
-        12: #202020),
-    gray-t: (1: #00000003,
-        2: #00000006,
-        3: #00000010,
-        4: #00000017,
-        5: #0000001f,
-        6: #00000027,
-        7: #00000031,
-        8: #00000044,
-        9: #00000072,
-        10: #0000007c,
-        11: #0000009b,
-        12: #000000df),
-    interface: (contrast: #fff,
-        surface: #fef6f5cc,
-        indicator: #a31a13, // 📌
-        track: #a31a13 // 📌
-    )
-);
+$red-a1: rgba(255, 0, 0, 0.012);
+$red-a2: rgba(224, 32, 0, 0.032);
+$red-a3: rgba(232, 35, 0, 0.083);
+$red-a4: rgba(255, 40, 0, 0.15);
+$red-a5: rgba(251, 34, 0, 0.204);
+$red-a6: rgba(227, 33, 0, 0.271);
+$red-a7: rgba(208, 29, 1, 0.35);
+$red-a8: rgba(195, 26, 0, 0.451);
+$red-a9: rgba(156, 8, 0, 0.883);
+$red-a10: rgba(145, 0, 0, 0.942);
+$red-a11: rgba(182, 15, 0, 0.773);
+$red-a12: rgba(79, 7, 0, 0.891);
+
+// gray
+$red-g1: #fcfcfc;
+$red-g2: #f9f9f9;
+$red-g3: #efefef;
+$red-g4: #e8e8e8;
+$red-g5: #e0e0e0;
+$red-g6: #d8d8d8;
+$red-g7: #cecece;
+$red-g8: #bbb;
+$red-g9: #8d8d8d;
+$red-g10: #838383;
+$red-g11: #646464;
+$red-g12: #202020;
+// gray-t: 
+$red-ga1: #00000003;
+$red-ga2: #00000006;
+$red-ga3: #00000010;
+$red-ga4: #00000017;
+$red-ga5: #0000001f;
+$red-ga6: #00000027;
+$red-ga7: #00000031;
+$red-ga8: #00000044;
+$red-ga9: #00000072;
+$red-ga10: #0000007c;
+$red-ga11: #0000009b;
+$red-ga12: #000000df;
+// interface: 
+$red-contrast: #fff;
+$red-surface: #fef6f5cc;
+$red-indicator: #a31a13; // 📌
+$red-track: #a31a13; // 📌
+
 
 // Mapa de colores para el modo oscuro
-$colors-dark: (
-    reds: (1: #190e0c,
-        2: #23110f,
-        3: #440604,
-        4: #5d0000,
-        5: #700000,
-        6: #830000,
-        7: #9f140f,
-        8: #ce1c15,
-        9: #a31a13,
-        10: #8c0d09,
-        11: #ff9080,
-        12: #ffcdc3),
-    transparent: (a1: #f4000009,
-        a2: #f7110014,
-        a3: #fe000037,
-        a4: #fd000052,
-        a5: #ff000066,
-        a6: #fd00007b,
-        a7: #fe160e99,
-        a8: #ff1f17cb,
-        a9: #fe1f149d,
-        a10: #ff0a0284,
-        a11: #ff9080,
-        a12: #ffcdc3,
-    ),
-    gray: (1: #111,
-        2: #191919,
-        3: #222,
-        4: #2a2a2a,
-        5: #313131,
-        6: #3a3a3a,
-        7: #484848,
-        8: #606060,
-        9: #6e6e6e,
-        10: #7b7b7b,
-        11: #b4b4b4,
-        12: #eee),
-    gray-t: (1: #00000000,
-        2: #ffffff09,
-        3: #ffffff12,
-        4: #ffffff1b,
-        5: #ffffff22,
-        6: #ffffff2c,
-        7: #ffffff3b,
-        8: #ffffff55,
-        9: #ffffff64,
-        10: #ffffff72,
-        11: #ffffffaf,
-        12: #ffffffed),
-    interface: (contrast: #FFFFFF,
-        surface: rgba(255, 255, 255, 0.8),
-        indicator: #6e6e6e,
-        track: #6e6e6e)
-);
+//colors-dark: 
+$red-d-1: #190e0c;
+$red-d-2: #23110f;
+$red-d-3: #440604;
+$red-d-4: #5d0000;
+$red-d-5: #700000;
+$red-d-6: #830000;
+$red-d-7: #9f140f;
+$red-d-8: #ce1c15;
+$red-d-9: #a31a13;
+$red-d-10: #8c0d09;
+$red-d-11: #ff9080;
+$red-d-12: #ffcdc3;
+// transparent:
+$red-d-a1: #f4000009;
+$red-d-a2: #f7110014;
+$red-d-a3: #fe000037;
+$red-d-a4: #fd000052;
+$red-d-a5: #ff000066;
+$red-d-a6: #fd00007b;
+$red-d-a7: #fe160e99;
+$red-d-a8: #ff1f17cb;
+$red-d-a9: #fe1f149d;
+$red-d-a10: #ff0a0284;
+$red-d-a11: #ff9080;
+$red-d-a12: #ffcdc3;
+// gray:
+$red-d-g1: #111;
+$red-d-g2: #191919;
+$red-d-g3: #222;
+$red-d-g4: #2a2a2a;
+$red-d-g5: #313131;
+$red-d-g6: #3a3a3a;
+$red-d-g7: #484848;
+$red-d-g8: #606060;
+$red-d-g9: #6e6e6e;
+$red-d-g10: #7b7b7b;
+$red-d-g11: #b4b4b4;
+$red-d-g12: #eee;
+// gray-t: 
+$red-d-ga1: #00000000;
+$red-d-ga2: #ffffff09;
+$red-d-ga3: #ffffff12;
+$red-d-ga4: #ffffff1b;
+$red-d-ga5: #ffffff22;
+$red-d-ga6: #ffffff2c;
+$red-d-ga7: #ffffff3b;
+$red-d-ga8: #ffffff55;
+$red-d-ga9: #ffffff64;
+$red-d-ga10: #ffffff72;
+$red-d-ga11: #ffffffaf;
+$red-d-ga12: #ffffffed;
+// interface: 
+$red-d-contrast: #FFFFFF;
+$red-d-surface: rgba(255, 255, 255, 0.8);
+$red-d-indicator: #6e6e6e;
+$red-d-track: #6e6e6e;
