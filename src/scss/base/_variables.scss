@@ -63,3 +63,128 @@ $red-surface: #fef6f5cc;
 $red-indicator: #a31a13; // 📌
 $red-track: #a31a13;
 
+// Colores Globales
+$negro: #000000;
+$amarillo: #f5a425;
+$verde: #71B100;
+$blanco: #ffffff;
+$gris: #8D8D8D;
+$grisOscuro: #333333;
+$rojoOscuro: #a31a13; // Color Principal
+$rojoClaro: #FF9080;
+$rosa: #E39589;
+// Mapa de colores para el modo claro
+$colors-light: (
+    $red-1: #fffcfc, //Backgrounds
+    $red-2: #fef8f7, //Backgrounds
+    $red-3: #fdece9, // Interactive components
+    $red-4: #ffded8, // Interactive components
+    $red-5: #fed0c9, // Interactive components
+    $red-6: #f7c1b8, // Borders and separators
+    $red-7: #eeaea4, // Borders and separators
+    $red-8: #e39589, // Borders and separators
+    $red-9: #a31a13, // Solid colors 📌
+    $red-10: #910000, // Solid colors
+    $red-11: #c43e32, //Accessible text
+    $red-12: #601f19 //Accessible text - selección f y h
+
+    transparent: (a1: rgba(255, 0, 0, 0.012),
+        a2: rgba(224, 32, 0, 0.032),
+        a3: rgba(232, 35, 0, 0.083),
+        a4: rgba(255, 40, 0, 0.15),
+        a5: rgba(251, 34, 0, 0.204),
+        a6: rgba(227, 33, 0, 0.271),
+        a7: rgba(208, 29, 1, 0.35),
+        a8: rgba(195, 26, 0, 0.451),
+        a9: rgba(156, 8, 0, 0.883),
+        a10: rgba(145, 0, 0, 0.942),
+        a11: rgba(182, 15, 0, 0.773),
+        a12: rgba(79, 7, 0, 0.891),
+    ),
+    gray: (1: #fcfcfc,
+        2: #f9f9f9,
+        3: #efefef,
+        4: #e8e8e8,
+        5: #e0e0e0,
+        6: #d8d8d8,
+        7: #cecece,
+        8: #bbb,
+        9: #8d8d8d,
+        10: #838383,
+        11: #646464,
+        12: #202020),
+    gray-t: (1: #00000003,
+        2: #00000006,
+        3: #00000010,
+        4: #00000017,
+        5: #0000001f,
+        6: #00000027,
+        7: #00000031,
+        8: #00000044,
+        9: #00000072,
+        10: #0000007c,
+        11: #0000009b,
+        12: #000000df),
+    interface: (contrast: #fff,
+        surface: #fef6f5cc,
+        indicator: #a31a13, // 📌
+        track: #a31a13 // 📌
+    )
+);
+
+// Mapa de colores para el modo oscuro
+$colors-dark: (
+    reds: (1: #190e0c,
+        2: #23110f,
+        3: #440604,
+        4: #5d0000,
+        5: #700000,
+        6: #830000,
+        7: #9f140f,
+        8: #ce1c15,
+        9: #a31a13,
+        10: #8c0d09,
+        11: #ff9080,
+        12: #ffcdc3),
+    transparent: (a1: #f4000009,
+        a2: #f7110014,
+        a3: #fe000037,
+        a4: #fd000052,
+        a5: #ff000066,
+        a6: #fd00007b,
+        a7: #fe160e99,
+        a8: #ff1f17cb,
+        a9: #fe1f149d,
+        a10: #ff0a0284,
+        a11: #ff9080,
+        a12: #ffcdc3,
+    ),
+    gray: (1: #111,
+        2: #191919,
+        3: #222,
+        4: #2a2a2a,
+        5: #313131,
+        6: #3a3a3a,
+        7: #484848,
+        8: #606060,
+        9: #6e6e6e,
+        10: #7b7b7b,
+        11: #b4b4b4,
+        12: #eee),
+    gray-t: (1: #00000000,
+        2: #ffffff09,
+        3: #ffffff12,
+        4: #ffffff1b,
+        5: #ffffff22,
+        6: #ffffff2c,
+        7: #ffffff3b,
+        8: #ffffff55,
+        9: #ffffff64,
+        10: #ffffff72,
+        11: #ffffffaf,
+        12: #ffffffed),
+    interface: (contrast: #FFFFFF,
+        surface: rgba(255, 255, 255, 0.8),
+        indicator: #6e6e6e,
+        track: #6e6e6e)
+);
