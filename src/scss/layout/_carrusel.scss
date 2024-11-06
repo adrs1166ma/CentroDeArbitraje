@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(#ECEFFE, #CED6FB);
+    background: linear-gradient($red-1, $red-3);
 }
 
 .card-wrapper {
@@ -31,7 +31,7 @@ body {
 
 
 .card-list .card-item .card-link:hover {
-    border-color: #5372F0;
+    border-color: $red-8;
 }
 
 .card-list .card-link .card-image {
@@ -42,7 +42,7 @@ body {
 }
 
 .card-list .card-link .badge {
-    color: #5372F0;
+    color: $red-11;
     padding: 8px 16px;
     font-size: 0.95rem;
     font-weight: 500;
@@ -51,22 +51,13 @@ body {
     width: fit-content;
     border-radius: 50px;
 }
-.card-list .card-link .badge.designer {
-    color: #B22485;
-    background: #F7DFF5;
+
+// Diseño de etiqueta
+.card-list .card-link .badge.asesoria {
+    color: $red-11;
+    background: $red-4;
 }
-.card-list .card-link .badge.marketer {
-    color: #B25A2B;
-    background: #FFE3D2;
-}
-.card-list .card-link .badge.gamer {
-    color: #205c20;
-    background: #d6f8d6;
-}
-.card-list .card-link .badge.editor {
-    color: #856404;
-    background: #fff3cd;
-}
+
 .card-list .card-link .card-title {
     font-size: 1.19rem;
     color: #000;
@@ -76,32 +67,32 @@ body {
 .card-list .card-link .card-button {
     height: 35px;
     width: 25px;
-    color: #5372F0;
+    color: $red-9;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
-    border: 2px solid #5372F0;
+    border: 2px solid $red-9;
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
 .card-list .card-link:hover .card-button {
     color: #fff;
-    background: #5372F0;
+    background: $red-9;
 }
 
 .card-wrapper .swiper-pagination-bullet {
     height: 13px;
     width: 13px;
     opacity: 0.5;
-    background: #5372f0;
+    background: $red-9;
 }
 .card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
 }
 
 .card-wrapper .swiper-slide-button {
-    color: #5372f0;
+    color: $red-9;
     margin-top: -35px;
 }
 

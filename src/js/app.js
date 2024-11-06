@@ -22,6 +22,12 @@ new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
 
+    // Autoplay configuration
+    autoplay: {
+        delay: 2000, // Tiempo en milisegundos (3 segundos en este caso)
+        disableOnInteraction: false, // Permite que continúe el autoplay incluso si el usuario interactúa con el carrusel
+    },
+
     // Pagination bullets
     pagination: {
         el: '.swiper-pagination',
