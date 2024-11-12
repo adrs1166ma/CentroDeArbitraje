@@ -5,6 +5,8 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
     font-family: $fuente_principal;
+    margin: 0;
+    padding: 0; 
 }
 body {
     font-size: 1.6rem;
@@ -16,9 +18,10 @@ p {
     font-size: 2rem;
 }
 .contenedor {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    // padding-left: 2.4rem;
+    // padding-right: 2.4rem;
 }
 
 a {

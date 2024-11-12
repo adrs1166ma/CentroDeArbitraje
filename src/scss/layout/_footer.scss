@@ -5,15 +5,10 @@
     position: relative;
     margin-bottom: 0;
     width: 100%;
-    opacity: 1;
-
+    
 }
-.contenedor-footer {    
-    opacity: 1;
-    width: 100%;
-    opacity: 1;
+.contenedor-footer {  
     padding: 4rem 2.4rem 3.2rem;
-    display: flex;
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -24,7 +19,6 @@
     position: relative;
 }
 .footer-arriba {
-    opacity: 1;
     gap: 4rem;
     display: flex;
     align-items: flex-start;
@@ -40,7 +34,7 @@
 .footer-img {
     
     flex-shrink: 0;
-    opacity: 1;
+    
     flex: none;
     width: 20rem;
     position: relative;
@@ -48,7 +42,7 @@
 
 /** copyright **/
 .footer-abajo {
-    opacity: 1;
+    
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -70,7 +64,7 @@
     justify-content: start;
     flex-shrink: 0;
     transform: none;
-    opacity: 1;
+    
     order: 1;
     height: auto;
     position: relative;
