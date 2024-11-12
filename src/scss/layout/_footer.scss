@@ -1,115 +1,73 @@
 .footer {
     background-color: $red-a9;
-    flex: 0 0 auto;
-    height: auto;
+    @include size(100%, auto);
     position: relative;
-    margin-bottom: 0;
-    width: 100%;
-    
+    flex: 0 0 auto;
 }
-.contenedor-footer {  
+
+.contenedor-footer {
+    @include flexbox(column, center, flex-start, nowrap, 4.8rem);
     padding: 4rem 2.4rem 3.2rem;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 4.8rem;
     height: min-content;
-    justify-content: center;
     overflow: hidden;
     position: relative;
 }
+
 .footer-arriba {
-    gap: 4rem;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: min-content;
-    justify-content: flex-start;
+    @include flexbox(column, flex-start, flex-start, nowrap, 4rem);
+    @include size(100%, min-content);
     overflow: visible;
-    padding: 0;
     position: relative;
-    width: 100%;    
 }
+
 .footer-img {
-    
-    flex-shrink: 0;
-    
+    @include size(20rem);
     flex: none;
-    width: 20rem;
+    flex-shrink: 0;
     position: relative;
 }
 
 /** copyright **/
 .footer-abajo {
-    
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: min-content;
-    justify-content: flex-start;
+    @include flexbox(column, flex-start, flex-start, nowrap);
+    @include size(100%, min-content);
     overflow: visible;
-    padding: 0;
     position: relative;
-    width: 100%;
     z-index: 8;
-    
 }
+
 .contenedor-copyright {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    @include flexbox(column, flex-start);
     flex-shrink: 0;
-    transform: none;
-    
     order: 1;
-    height: auto;
+    @include size(auto);
     position: relative;
     user-select: none;
     white-space: pre-line;
-    width: auto;
+    outline: none;
 }
+
 .copyright {
-    color: $red-8;
+    @include text-style($red-8, 12px);
     text-align: left;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
 
     a {
-        color: $red-1;
-        box-sizing: border-box;
-        cursor: pointer;
-        font-weight: $regular;
-        letter-spacing: normal;
-        line-height: 1.6rem;
-
+        @include text-style($red-1, inherit, $regular);
+        @include link-underline($red-8);
+        @include link-transition;
         text-align: start;
-        text-decoration: underline !important;
-        text-decoration-line: underline;
-        text-decoration-color: $red-8;
-        text-decoration-style: solid;
-        text-decoration-thickness: 0.1rem;
-        text-transform: none;
-        text-underline-offset: 5px;
         text-wrap-mode: nowrap;
         text-wrap-style: auto;
-
-        transition-behavior: normal;
-        transition-delay: 0s;
-        transition-duration: 0.3s;
-        transition-property: color;
-        transition-timing-function: cubic-bezier(0.12, 0.23, 0.5, 1);
         white-space-collapse: preserve;
-    }
-    a:hover {
-        color: $rojoClaro;
-        text-decoration: none !important;
-    }
-    a::selection {
-        background-color: #9F140F;
+        cursor: pointer;
+        box-sizing: border-box;
+        letter-spacing: normal;
+
+        &:hover {
+            color: $rojoClaro;
+            text-decoration: none !important;
+        }
+
+        @include selection(#9F140F);
     }
 }

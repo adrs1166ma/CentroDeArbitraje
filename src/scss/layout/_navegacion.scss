@@ -1,223 +1,134 @@
 /** Parte header ⬆️ **/
+// Navigation styles for both header and footer
 .c-nav {
+    @include flexbox(column, flex-start, center, nowrap, 0.4rem);
+    @include size(100%, min-content);
     
-    
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 0.4rem;
-    height: min-content;
-    justify-content: flex-start;
-    padding: 0;
     position: relative;
 
     @include tablet {
-        flex-direction: row;
-        justify-content: flex-end;
+        @include flexbox(row, flex-end, center);
     }
 }
-.c1-nav {
-    
-    
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    height: min-content;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    width: min-content;
 
-}
-.c2-nav{
+.c1-nav {
+    @include flexbox(row, center, center, nowrap, 1rem);
+    @include size(min-content, min-content);
     
-    
-    display: block;
-    height: 3.2rem;
     position: relative;
-    width: auto;
+}
+
+.c2-nav {
+    @include size(auto, 3.2rem);
+    display: block;
+    position: relative;
 
     a {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 0.4rem;
-        justify-content: center;
-        height: 100%;
+        @include flexbox(row, center, center, nowrap, 0.4rem);
+        @include size(min-content, 100%);
         padding: 0.8rem 1.2rem;
         position: relative;
-        width: min-content;
     }
 }
+
 .c3-nav {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include flexbox(column, flex-start);
     flex-shrink: 0;
-    
-    
-    opacity: 1;
-    height: auto;
+    @include size(auto);
     position: relative;
     white-space: pre;
-    width: auto;
+    outline: none;
 
     p {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-        margin: 0px;
-        padding: 0px;
-        color: $red-1;
-        font-weight: $bold;
-    }
-    p:hover {
-        color: $rojoClaro;
-    }
-    p::selection {
-        background-color: $rosa;
+        @include text-style($red-1, 1.4rem, $bold);
+
+        &:hover {
+            color: $rojoClaro;
+        }
+
+        @include selection($rosa);
     }
 }
 
 /** Parte footer ⬇️ **/
 .c-nav-f {
-    display: flex;
-    opacity: 1;
-    flex-direction: column;
-    gap: 3.2rem;
+    @include flexbox(column, null, null, null, 3.2rem);
+    
     width: 100%;
 
     @include tablet {
-        align-items: flex-start;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 8rem;
+        @include flexbox(row, flex-start, flex-start, nowrap, 8rem);
         height: min-content;
-        justify-content: flex-start;
-        padding: 0;
+        
         position: relative;
     }
 }
-.c1-nav-f {
-    opacity: 1;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 1.6rem;
-    height: min-content;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    width: min-content;
 
+.c1-nav-f {
+    @include flexbox(column, center, flex-start, nowrap, 1.6rem);
+    
+    @include size(min-content, min-content);
+    
+    position: relative;
 }
+
 .t-nav-f {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    
-    opacity: 1;
-    height: auto;
-    position: relative;
-    width: auto;
+    @extend .c3-nav;
+
     p {
-        color: $red-8;
-        font-size: 1.8rem;
-        font-weight: $bold;
-        line-height: 1.6rem;
-        margin: 0px;
-        padding: 0px;
+        @include text-style($red-8, 1.8rem, $bold);
+        @include selection($red-11, $red-8);
     }
-    p::selection {
-        background-color: $red-11;
-        color: $red-8;
-    }
-    
 }
+
 .c2-nav-f {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    
-    opacity: 1;
-    height: auto;
-    position: relative;
-    width: auto;
+    @extend .c3-nav;
+
     p {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-        margin: 0px;
-        padding: 0px;
+        @include text-style($red-8, 1.4rem);
 
         a {
-            color: $red-8;
-            box-sizing: border-box;
+            @include text-style($red-8, inherit, $regular);
+            @include link-transition;
             cursor: pointer;
-            font-weight: $regular;
+            box-sizing: border-box;
             letter-spacing: normal;
-            line-height: 1.6rem;
             text-align: start;
             text-wrap-mode: nowrap;
             text-wrap-style: auto;
-            
-            
+            white-space-collapse: preserve;
 
-            transition-behavior: normal;
-            transition-delay: 0s;
-            transition-duration: 0.3s;
-            transition-property: color;
-            transition-timing-function: cubic-bezier(0.12, 0.23, 0.5, 1);
-            white-space-collapse: preserve;            
-        }
-        a:hover {
-            text-decoration-line: underline !important;
-            text-decoration-color: $red-8;
-            text-decoration-style: solid;
-            text-decoration-thickness: 0.1rem;
-            text-transform: none;
-            text-underline-offset: 5px;
-            color: $red-1;
-        }
-        a::selection {
-            background-color: $red-11;
-            color: $red-8;
+            &:hover {
+                @include link-underline($red-8);
+                color: $red-1;
+            }
+
+            @include selection($red-11, $red-8);
         }
     }
-}        
+}
 
 /** Menu de hamburguesa **/
 .mobile-menu {
     @include tablet {
         display: none;
     }
+
     position: relative;
 }
+
 /** logo **/
 .logo {
     width: 20rem;
-    filter: drop-shadow(
-    0 0 10px rgba(0, 0, 0, .8)
-    )
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8))
 }
+
 .logo-c {
     width: 10rem;
-    filter: drop-shadow(
-    0 0 10px rgba(0, 0, 0, .8)
-    )
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8))
 }
+
 /**  **/
 .mostrar {
     display: flex;
 }
-
-

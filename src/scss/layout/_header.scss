@@ -1,17 +1,13 @@
 .header {
     background-color: $rojoOscuro;
-    height: auto;
-    left: 0px;
-    position: fixed;
-    right: 0px;
-    top: 0px;
+    @include fixed-position;
     z-index: 10;
     display: block;
 }
 
 .contenedor-header {
     border-width: 0px 0px 0.3rem 0px;
-    border-color: $red-10;//#a20909
+    border-color: $red-10; //#a20909
     border-style: solid;
 
     align-items: flex-start;
@@ -24,124 +20,77 @@
 }
 
 .barra {
-    
-    
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    @include flexbox(column, flex-start, flex-start, nowrap, 2.4rem);
+    @include size(100%);
     max-width: unset;
-    width: 100%;
-    flex-wrap: nowrap;
-    gap: 2.4rem;
-    height: min-content;
-    justify-content: flex-start;
-    padding: 0 ;
-    position: relative;
-
-    @include tablet {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    
-}
-.barra-arriba {
-    
-    
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
     height: min-content;
     padding: 0;
     position: relative;
 
+    @include tablet {
+        @include flexbox(row, flex-start, center);
+    }
 }
-.barra-img {
-    
-    
-    height: auto;
+
+.barra-arriba {
+    @include flexbox(row, space-between, center);
+    @include size(100%, min-content);
+    padding: 0;
     position: relative;
-    width: auto;
+}
+
+.barra-img {
+    @include size;
+    position: relative;
     display: block;
     unicode-bidi: isolate;
 }
+
 .mobile-menu {
-    
-    
-    height: 4.0rem;
+    @include size(4.0rem);
     position: relative;
-    width: 4.0rem;
 
     @include tablet {
         display: none;
     }
-    
 }
+
 .mm1 {
-    height: 100%;
-    width: 100%;
-    
-    
+    @include size(100%);
+    @include flexbox(row, center, center, nowrap, 1.0rem);
     aspect-ratio: 1 / 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 1.0rem;
     cursor: pointer;
-    justify-content: center;
     padding: 0;
     position: relative;
-
 }
+
 .mm2 {
-    
-    
+    @include size(3.6rem);
     position: relative;
-    height: 3.6rem;
-    width: 3.6rem;
-    
+
     img {
-        height: 3.6rem;
-        width: 3.6rem;
+        @include size(3.6rem);
     }
 }
+
 .barra-abajo {
-    
-    
+    @include flexbox(column, flex-start, flex-start, nowrap, 2.4rem);
+    // 📌 Dejar el "none" despues del mixin para que el flex del mixin 
+    //    sea interrumpido y pueda activarse con ".mostrar"
     display: none;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2.4rem;
-    justify-content: flex-start;
-    width: 100%;
-    flex-wrap: nowrap;
-    height: min-content;
+    @include size(100%, min-content);
     padding: 0;
     position: relative;
     z-index: 8;
-    
 
     @include tablet {
-        
-        
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
+        @include flexbox(row, flex-end, center);
     }
-    
-    
 }
 
 .mostrar {
-    display: flex !important; 
+    display: flex;
 }
-
-
 
 .video {
     text-align: left;
@@ -150,12 +99,3 @@
     line-height: 2;
     max-width: 60rem;
 }
-
-// .panel {
-//     transform: translateY(-26rem) !important;
-// }
-
-// .panel.is-active {
-//     transition: .4s ease;
-//     transform: translateY(0) !important;
-// }
