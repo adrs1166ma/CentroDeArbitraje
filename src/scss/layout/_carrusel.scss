@@ -1,6 +1,8 @@
-.container {
+.contenedor-carrusel {
     display: flex;
     justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
 .card-wrapper {
     max-width: 1100px;
@@ -44,7 +46,7 @@
     color: $red-11;
     padding: 8px 16px;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: $bold;
     margin: 16px 0 18px;
     background: $red-1;
     width: fit-content;
@@ -60,7 +62,7 @@
 .card-list .card-link .card-title {
     font-size: 1.19rem;
     color: #000;
-    font-weight: 600;
+    font-weight: $delgada;
 }
 
 .card-list .card-link .card-button {
@@ -90,7 +92,9 @@
 .card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
 }
-
+.swiper-pagination{
+    padding-bottom: 5rem;
+}
 .card-wrapper .swiper-slide-button {
     color: $red-9;
     margin-top: -35px;

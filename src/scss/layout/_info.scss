@@ -1,0 +1,64 @@
+.info-now {
+    @include size(100%, auto);
+    flex: 1 1 auto;
+}
+.contenedor-info {
+    @include flexbox(column, center, flex-start, nowrap, 4.8rem);
+    padding: 4rem 2.4rem 3.2rem;
+    height: 100vh;
+}
+.fila{
+    @include flexbox(column, center, center, null, 5rem);
+
+    @include tablet {
+        @include flexbox(row, center, center);
+    }
+}
+.columna-texto {
+    @include flexbox(column, center, center, null, 8rem);
+}
+.columna-completa {
+    h3{
+        font-weight: $bold;
+    }
+    p {
+        font-weight: $delgada;
+    }
+}
+
+.columna-acordeon {
+    padding: 4rem;
+    @include flexbox(column, flex-start, flex-start, null, 8rem);
+    background: #ffcac7;
+    border-radius: 2.5rem;
+}
+.acordeon {
+    @include flexbox(column, flex-start, flex-start, null, 2rem);
+}
+.acordeon-cabeza{
+    h3 {
+        font-size: 3rem;
+        font-weight: $bold;
+        color: #490906;
+        span {
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4))
+        }
+    }
+}
+.contenido-info {
+    p {
+        font-weight: $delgada;
+        color: #c31b12;
+    }
+}
+// .icono-fa {
+//     width: 3rem;
+//     height: 3rem;
+//     display: inline-block;
+//     background-color: #490906; /* Cambia el color aquí */
+//     -webkit-mask-image: url("../img/clock.svg");
+//     mask-image: url("../img/clock.svg");
+//     mask-size: contain;
+//     mask-repeat: no-repeat;
+//     mask-position: center;
+// }

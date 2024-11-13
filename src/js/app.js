@@ -24,7 +24,7 @@ new Swiper('.card-wrapper', {
 
     // Autoplay configuration
     autoplay: {
-        delay: 2000, // Tiempo en milisegundos (3 segundos en este caso)
+        delay: 4000, // Tiempo en milisegundos (3 segundos en este caso)
         disableOnInteraction: false, // Permite que continúe el autoplay incluso si el usuario interactúa con el carrusel
     },
 
