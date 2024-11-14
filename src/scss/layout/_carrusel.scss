@@ -1,7 +1,7 @@
 .contenedor-carrusel {
     display: flex;
     justify-content: center;
-    @include size(100%, auto);
+    @include size(100%, 70rem);
     align-items: center;
 }
 .card-wrapper {

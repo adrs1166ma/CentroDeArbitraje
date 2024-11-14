@@ -1,13 +1,15 @@
 .info-now {
     @include size(100%, auto);
-    flex: 1 1 auto;
 }
 .contenedor-info {
     @include flexbox(column, center, flex-start, nowrap, 4.8rem);
     padding: 4rem 2.4rem 3.2rem;
     height: auto;
     @include tablet {
-        padding: 4rem 20rem 3.2rem;
+        padding: 4rem 5rem 3.2rem;
+    }
+    @include desktop {
+        padding: 4rem 10rem 3.2rem;
     }
 }
 .fila{
@@ -31,23 +33,59 @@
 
 .columna-acordeon {
     padding: 4rem;
-    @include flexbox(column, flex-start, flex-start, null, 8rem);
-    background: #ffcac7;
+    @include flexbox(column, flex-start, flex-start, null, 4rem);
+    background: #FDECE9;
     border-radius: 2.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), /* sombra suave alrededor */
                 0px 8px 16px rgba(0, 0, 0, 0.1), /* sombra más suave hacia abajo */
                 0px 16px 32px rgba(0, 0, 0, 0.05); /* sombra aún más difusa */
 }
 .acordeon {
-    @include flexbox(column, flex-start, flex-start, null, 2rem);
+    @include flexbox(column, flex-start, flex-start, null, 1rem);
 }
 .acordeon-cabeza{
     h3 {
         font-size: 3rem;
         font-weight: $bold;
         color: #490906;
-        span {
-            filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4))
+        .i-clock {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-color: #490906; /* Cambia el color aquí */
+            -webkit-mask-image: url("../../icons/clock.svg");
+            mask-image: url("../../icons/clock.svg");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            // background-image: url("../img/clock.svg");
+            // filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4))
+        }
+        .i-computer {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-color: #490906; /* Cambia el color aquí */
+            -webkit-mask-image: url("../../icons/computer.svg");
+            mask-image: url("../../icons/computer.svg");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            // background-image: url("../img/clock.svg");
+            // filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4))
+        }
+        .i-stars {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-color: #490906; /* Cambia el color aquí */
+            -webkit-mask-image: url("../../icons/stars.svg");
+            mask-image: url("../../icons/stars.svg");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            // background-image: url("../img/clock.svg");
+            // filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4))
         }
     }
 }
