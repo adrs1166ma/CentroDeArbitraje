@@ -1,0 +1,178 @@
+// Variables
+$primary: #e8241a; // tamarillo-600
+$primary-light: #ffa49f; // tamarillo-300
+$primary-dark: #c31b12; // tamarillo-700
+$bg-light: #fff2f1; // tamarillo-50
+$bg-input: #ffffff;
+$text-dark: #490906; // tamarillo-950
+$text-light: #851c17; // tamarillo-900
+$border-radius: 1.2rem;
+$transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+.contact-us {
+  padding: 2.4rem;
+  background-color: $bg-light;
+  
+  @include desktop {
+    padding: 20rem;
+  }
+
+  .container {
+    @include flexbox(column, center, stretch, wrap, 3rem);
+    max-width: 120rem;
+    margin: 0 auto;
+
+    form {
+      background-color: $bg-input;
+      border-radius: $border-radius;
+      box-shadow: 0 10px 25px -5px rgba($primary, 0.1);
+      padding: 4rem;
+
+      h2 {
+        @include text-style($text-dark, 3.6rem, 700);
+        margin-bottom: 4rem;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -1rem;
+          width: 6rem;
+          height: 0.4rem;
+          background-color: $primary;
+          border-radius: 1rem;
+        }
+      }
+
+      .row {
+        @include grid(1, 2.5rem);
+
+        @include tablet {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include desktop {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        &:focus-within label {
+          transform: translateY(-2.5rem) scale(0.85);
+          color: $primary;
+        }
+      }
+
+      input,
+      textarea {
+        @include size(100%, auto);
+        padding: 1.8rem 2rem;
+        background-color: $bg-input;
+        border: 2px solid transparent;
+        border-radius: $border-radius;
+        @include text-style($text-dark, 1.6rem, 400);
+        transition: $transition;
+        box-shadow: 0 2px 10px -3px rgba($text-dark, 0.1);
+
+        &::placeholder {
+          color: transparentize($text-light, 0.6);
+          transition: $transition;
+        }
+
+        &:hover {
+          box-shadow: 0 4px 15px -3px rgba($text-dark, 0.15);
+        }
+
+        &:focus {
+          outline: none;
+          border-color: $primary;
+          background-color: mix($bg-input, $bg-light, 97%);
+          box-shadow: 0 0 0 4px rgba($primary, 0.15);
+
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+      }
+
+      textarea {
+        min-height: 18rem;
+        resize: vertical;
+        line-height: 1.6;
+      }
+
+      button {
+        @include text-style(white, 1.6rem, 600);
+        background-color: $primary;
+        padding: 1.8rem 4rem;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+        transition: $transition;
+        box-shadow: 0 4px 15px -3px rgba($primary, 0.3);
+
+        &:hover {
+          background-color: $primary-dark;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px -3px rgba($primary, 0.4);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px rgba($primary, 0.25);
+        }
+      }
+    }
+  }
+
+  .right-info {
+    background-color: white;
+    border-radius: $border-radius;
+    padding: 4rem;
+    box-shadow: 0 10px 25px -5px rgba($primary, 0.1);
+
+    ul {
+      @include flexbox(column, flex-start, stretch, nowrap, 4rem);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        @include flexbox(column, center, flex-start, nowrap, 1rem);
+        position: relative;
+        padding-left: 3rem;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0.5rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          background-color: $primary-light;
+          border-radius: 50%;
+        }
+
+        h6 {
+          @include text-style($primary, 1.8rem, 600);
+          margin-bottom: 0.8rem;
+        }
+
+        span {
+          @include text-style($text-light, 1.6rem, 400);
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}
