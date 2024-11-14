@@ -84,6 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeHeaderScroll();
 });
 
+
+
 const initializeHeaderScroll = () => {
   const header = document.querySelector('.header');
   let lastScrollTop = 0;
