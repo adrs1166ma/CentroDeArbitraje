@@ -2,71 +2,50 @@
     background-color: $rojoOscuro;
     @include fixed-position;
     z-index: 10;
-    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+
+    &.hidden {
+        transform: translateY(-100%);
+    }
 }
 
 .contenedor-header {
-    border-width: 0px 0px 0.3rem 0px;
-    border-color: $red-10; //#a20909
-    border-style: solid;
-
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
+    border-bottom: 0.3rem solid $red-10;
     padding: 1.8rem 2.4rem;
-    flex-wrap: nowrap;
-    height: min-content;
-    position: relative;
 }
 
 .barra {
     @include flexbox(column, flex-start, flex-start, nowrap, 2.4rem);
-    @include size(100%);
-    max-width: unset;
-    height: min-content;
-    padding: 0;
-    position: relative;
+    @include size(100%, auto);
 
     @include tablet {
-        @include flexbox(row, flex-start, center);
+        @include flexbox(row, space-between, center);
     }
 }
 
 .barra-arriba {
     @include flexbox(row, space-between, center);
-    @include size(100%, min-content);
-    padding: 0;
-    position: relative;
+    @include size(100%, auto);
 }
 
 .barra-img {
-    @include size;
-    position: relative;
-    display: block;
-    unicode-bidi: isolate;
+    @include size(auto, 4rem);
+
+    img {
+        height: 100%;
+        width: auto;
+    }
 }
 
 .mobile-menu {
-    @include size(4.0rem);
-    position: relative;
+    @include size(4rem);
+    @include flexbox(row, center, center);
+    cursor: pointer;
 
     @include tablet {
         display: none;
     }
-}
-
-.mm1 {
-    @include size(100%);
-    @include flexbox(row, center, center, nowrap, 1.0rem);
-    aspect-ratio: 1 / 1;
-    cursor: pointer;
-    padding: 0;
-    position: relative;
-}
-
-.mm2 {
-    @include size(3.6rem);
-    position: relative;
 
     img {
         @include size(3.6rem);
@@ -74,23 +53,19 @@
 }
 
 .barra-abajo {
-    @include flexbox(column, flex-start, flex-start, nowrap, 2.4rem);
-    // 📌 Dejar el "none" despues del mixin para que el flex del mixin 
-    //    sea interrumpido y pueda activarse con ".mostrar"
     display: none;
-    @include size(100%, min-content);
-    padding: 0;
-    position: relative;
-    z-index: 8;
+    width: 100%;
+
+    &.mostrar {
+        display: block;
+    }
 
     @include tablet {
-        @include flexbox(row, flex-end, center);
+        display: block;
+        width: auto;
     }
 }
 
-.mostrar {
-    display: flex;
-}
 
 .video {
     text-align: left;

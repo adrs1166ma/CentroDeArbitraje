@@ -81,8 +81,28 @@ class FactsCounter {
 document.addEventListener("DOMContentLoaded", () => {
   eventListeners();
   initializeFactsCounter();
-  initializeFactsHoverEffects();
+  initializeHeaderScroll();
 });
+
+const initializeHeaderScroll = () => {
+  const header = document.querySelector('.header');
+  let lastScrollTop = 0;
+  const scrollThreshold = 50; // Adjust this value to change when the header hides
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+      // Scrolling down
+      header.classList.add('hidden');
+    } else {
+      // Scrolling up
+      header.classList.remove('hidden');
+    }
+
+    lastScrollTop = scrollTop;
+  });
+};
 
 const eventListeners = () => {
   const mobileMenu = document.querySelector(".mm1");
@@ -98,19 +118,19 @@ const initializeFactsCounter = () => {
   new FactsCounter();
 };
 
-const initializeFactsHoverEffects = () => {
-  const factItems = document.querySelectorAll(".stat-card");
-  factItems.forEach((item) => {
-    item.addEventListener("mouseenter", () => {
-      item.style.transform = "translateY(-5px)";
-      item.style.transition = "transform 0.3s ease";
-    });
+// const initializeFactsHoverEffects = () => {
+//   const factItems = document.querySelectorAll(".stat-card");
+//   factItems.forEach((item) => {
+//     item.addEventListener("mouseenter", () => {
+//       item.style.transform = "translateY(-5px)";
+//       item.style.transition = "transform 0.3s ease";
+//     });
 
-    item.addEventListener("mouseleave", () => {
-      item.style.transform = "translateY(0)";
-    });
-  });
-};
+//     item.addEventListener("mouseleave", () => {
+//       item.style.transform = "translateY(0)";
+//     });
+//   });
+// };
 
 new Swiper(".card-wrapper", {
   loop: true,
