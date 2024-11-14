@@ -5,7 +5,7 @@
     align-items: center;
 }
 .card-wrapper {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 60px 35px;
     padding: 20px 10px;
     overflow: hidden;
@@ -32,7 +32,7 @@
 
 
 .card-list .card-item .card-link:hover {
-    border-color: $red-8;
+    border-color: $red-9;
 }
 
 .card-list .card-link .card-image {
@@ -45,7 +45,7 @@
 .card-list .card-link .badge {
     color: $red-11;
     padding: 8px 16px;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     font-weight: $bold;
     margin: 16px 0 18px;
     background: $red-1;
@@ -55,12 +55,12 @@
 
 // Diseño de etiqueta
 .card-list .card-link .badge.asesoria {
-    color: $red-11;
+    color: $rojoClaro;
     background: $red-4;
 }
 
 .card-list .card-link .card-title {
-    font-size: 1.19rem;
+    font-size: 1.5rem;
     color: #000;
     font-weight: $delgada;
 }
@@ -69,25 +69,25 @@
     padding: 0;
     height: 35px;
     width: 35px;
-    color: $red-9;
+    color: $rojoClaro;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
-    border: 2px solid $red-9;
+    border: 2px solid $rojoClaro;
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
 .card-list .card-link:hover .card-button {
     color: #fff;
-    background: $red-9;
+    background: $rojoClaro;
 }
 
 .card-wrapper .swiper-pagination-bullet {
     height: 13px;
     width: 13px;
     opacity: 0.5;
-    background: $red-9;
+    background: $rojoClaro;
 }
 .card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
@@ -96,7 +96,7 @@
 //     padding-bottom: 5rem;
 // }
 .card-wrapper .swiper-slide-button {
-    color: $red-9;
+    color: $rojoClaro;
     margin-top: -35px;
 }
 
