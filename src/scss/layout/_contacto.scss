@@ -36,23 +36,32 @@ $color-error: $rojoOscuro;
 
 .contact-section {
   background-color: $color-background;
-  padding: 5rem 0;
-
+  padding: 10rem 0;
+  height: auto;
+  padding: 4rem 2.4rem 3.2rem;
+  @include tablet {
+    padding: 4rem 8rem 3.2rem;
+  }
+  @include desktop {
+    padding: 4rem 10rem 3.2rem;
+  }
   .contact-container {
+    border: 0.1rem $red-g5 solid;
+    border-radius: 5rem;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 4rem 2.4rem 3.2rem;
-    @include tablet {
-      padding: 4rem 8rem 3.2rem;
-    }
-    @include desktop {
-        padding: 4rem 10rem 3.2rem;
+    padding: 5rem;
+    
+    p {
+      padding-bottom: 3rem;
+      font-weight: $delgada;
+      color: $red-9;
     }
   }
 
   .contact-heading {
     @include text-style(#490906, 5rem, $black);
-    text-align: center;
+    text-align: start;
     margin-bottom: 3rem;
   }
 

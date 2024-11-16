@@ -5,11 +5,11 @@
     height: auto;
 
     @include tablet {
-        padding: $separacion * 1.5 0;
+        padding: $separacion * 2.5 0;
     }
 
     @include desktop {
-        padding: $separacion * 2 0;
+        padding: $separacion * 3 0;
     }
 }
 
@@ -30,19 +30,11 @@
 }
 
 .facts-title {
-    @include text-style($red-9, 2.5rem, $black);
+    @include text-style($red-9, 5rem, $black);
     text-align: center;
     margin-bottom: $separacion * 1.5;
     width: 100%;
     line-height: 1.2;
-
-    @include tablet {
-        font-size: 3rem;
-    }
-
-    @include desktop {
-        font-size: 3.5rem;
-    }
 }
 
 .facts-stats {
