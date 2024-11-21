@@ -104,6 +104,14 @@ El proyecto utiliza Gulp para automatizar tareas como la compilación de Sass, m
 npm run dev
 ```
 
+## Instrucciones para edicion de estilos SCSS
+- Dentro de la carpeta `scr` / `scss` / ..
+- Estaran todos los archivos scss listos para ser modificados
+- `base`, para los estilos globales o mixins
+- `internas`, para los que estan fuera del index
+- `layout`, para cada seccion 
+- Recordar que cada archivo `.scss` agregado se debe agregar en el app.scss
+- por ejemplo: @import 'layout/nuevoArchivo'; 
 
 ## Autor
 
