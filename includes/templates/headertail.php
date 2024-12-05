@@ -24,7 +24,6 @@
             <a href="nosotros.php" class="text-white text-sm font-medium px-3 py-2 hover:text-[#e8241a] @apply whitespace-pre">Nosotros</a>
             <a href="arbitraje.php" class="text-white text-sm font-medium px-3 py-2 hover:text-[#e8241a] @apply whitespace-pre">Arbitraje</a>
             <a href="registro_arbitros.php" class="text-white text-sm font-medium px-3 py-2 hover:text-[#e8241a] @apply whitespace-pre">Registro de Árbitros</a>
-            <a href="escuelaDeArbitraje.php" class="text-white text-sm font-medium px-3 py-2 hover:text-[#e8241a] @apply whitespace-pre">Escuela de Arbitraje</a>
             <a href="contactenos.php" class="text-white text-sm font-medium px-3 py-2 hover:text-[#e8241a] @apply whitespace-pre">Contáctenos</a>
         </nav>
         <!-- text-[#e8241a] | para activacion -->

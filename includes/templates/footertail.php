@@ -13,34 +13,29 @@
             <div class="flex flex-col items-start space-y-4">
                 <p class="text-[#e39589] font-bold text-lg">Navegación</p>
                 <ul class="space-y-2">
-                    <li><a href="nosotros.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nosotros</a></li>
-                    <li><a href="servicios.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Servicios</a></li>
-                    <li><a href="nominaDeArbitros.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nómina de Árbitros</a></li>
-                    <li><a href="escuelaDeArbitraje.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Escuela de Arbitraje</a></li>
+                    <li><a href="/" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nosotros</a></li>
+                    <li><a href="nosotros.php" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nosotros</a></li>
+                    <li><a href="arbitraje.php" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Servicios</a></li>
+                    <li><a href="registro_arbitros.php" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nómina de Árbitros</a></li>
                     <li><a href="contactenos.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Contáctenos</a></li>
                 </ul>
             </div>
             <!-- Repeat Navigation Columns -->
             <div class="flex flex-col items-start space-y-4">
-                <p class="text-[#e39589] font-bold text-lg">Navegación</p>
+                <p class="text-[#e39589] font-bold text-lg">Contacto</p>
                 <ul class="space-y-2">
-                    <li><a href="nosotros.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nosotros</a></li>
-                    <li><a href="servicios.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Servicios</a></li>
-                    <li><a href="nominaDeArbitros.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nómina de Árbitros</a></li>
-                    <li><a href="escuelaDeArbitraje.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Escuela de Arbitraje</a></li>
-                    <li><a href="contactenos.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Contáctenos</a></li>
+                    <li><a href="#" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out"><i class="fas fa-phone text-lg"></i> +51 953 287 062</a></li>
+                    <li><a href="#" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out"><i class="fas fa-envelope text-lg"></i> direccionejecutiva@camaranacional.org.pe</a></li>
+                    <li><a href="#" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out"><i class="fas fa-map-marker-alt text-lg"></i> Calle Luis Felipe Villaran, San Isidro, Lima</a></li>
                 </ul>
             </div>
             <div class="flex flex-col items-start space-y-4">
-                <p class="text-[#e39589] font-bold text-lg">Navegación</p>
+                <p class="text-[#e39589] font-bold text-lg">Legal</p>
                 <ul class="space-y-2">
-                    <li><a href="nosotros.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nosotros</a></li>
-                    <li><a href="servicios.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Servicios</a></li>
-                    <li><a href="nominaDeArbitros.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Nómina de Árbitros</a></li>
-                    <li><a href="escuelaDeArbitraje.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Escuela de Arbitraje</a></li>
-                    <li><a href="contactenos.html" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out">Contáctenos</a></li>
+                    <li><a href="./libro_de_reclamaciones.php" class="text-[#e39589] hover:text-[#e8241a] underline-offset-4 hover:underline transition-colors duration-300 ease-in-out"><i class="fas fa-book text-lg"></i> Libro de Reclamaciones</a></li>
                 </ul>
             </div>
+            
         </nav>
     </div>
     <!-- Footer Bottom -->

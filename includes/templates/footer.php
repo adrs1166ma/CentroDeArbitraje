@@ -26,15 +26,15 @@
                     </div>
                 </div><!-- c1-nav-f -->
                 <div class="c1-nav-f">
-                    <div class="t-nav-f"><p>Navegacion</p></div>
+                    <div class="t-nav-f"><p>Información</p></div>
                     <div class="c2-nav-f">
-                        <p><a href="nosotros.html">Nosotros</a></p>
+                        <p><a href="nosotros.html">Tel: +51953287062</a></p>
                     </div>
                     <div class="c2-nav-f">
-                        <p><a href="servicios.html">Servicios</a></p>
+                        <p><a href="servicios.html">Email: direccionejecutiva@camaranacional.org.pe</a></p>
                     </div>
                     <div class="c2-nav-f">
-                        <p><a href="nominaDeArbitros.html">Nómina de Árbitros</a></p>
+                        <p><a href="nominaDeArbitros.html">Dirección: Calle Luis Felipe Villaran,San Isidro</a></p>
                     </div>
                     <div class="c2-nav-f">
                         <p><a href="escuelaDeArbitraje.html">Escuela de Arbitraje</a></p>
