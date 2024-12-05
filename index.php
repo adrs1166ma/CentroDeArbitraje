@@ -10,45 +10,15 @@
 
     <title>Centro de arbitraje CNCP</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
     <link rel="stylesheet" href="build/css/app.css">
-    
 
 </head>
 <body>
-    <header class="header">
-        <div class="contenedor-header">
-            <div class="barra">
-                <div class="barra-arriba">
-                    <div class="barra-img">
-                        <a href="/">
-                            <img class="logo-c" src="build/img/logoCblanco.webp" alt="Logo Centro de Arbitraje">
-                        </a>
-                    </div>    
-                    <div class="mobile-menu">
-                        <div class="mm1">
-                            <div class="mm2">
-                                <img src="assets/icons/barras.svg" alt="icono menu responsive">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="barra-abajo">
-                    <nav class="c-nav">
-                        <div class="c1-nav"><div class="c2-nav"><a href="nosotros.html"><div class="c3-nav"><p>Nosotros</p></div></a></div></div>
-                        <div class="c1-nav"><div class="c2-nav"><a href="servicios.html"><div class="c3-nav"><p>Servicios</p></div></a></div></div>
-                        <div class="c1-nav"><div class="c2-nav"><a href="nominaDeArbitros.html"><div class="c3-nav"><p>Nómina de Árbitros</p></div></a></div></div>
-                        <div class="c1-nav"><div class="c2-nav"><a href="escuelaDeArbitraje.html"><div class="c3-nav"><p>Escuela de Arbitraje</p></div></a></div></div>
-                        <div class="c1-nav"><div class="c2-nav"><a href="contactenos.html"><div class="c3-nav"><p>Contactenos</p></div></a></div></div>
-                    </nav>
-                </div>
-            </div><!-- .barra  -->
-        </div>
-    </header>
+    <!-- start header  -->
+    <?php 
+    include "./includes/templates/header.php";
+    ?>
+    <!-- end header  -->
     
     <div class="video">
         <div class="overlay">
@@ -60,7 +30,10 @@
                         CEAR
                     </h1>
                     <p class="heroSubtitle">
-                        El centro de arbitraje de la CNCP ofrece servicios de conciliación, asesoría legal y más.
+                        Brindamos el mejor y eficiente servicio de arbitraje de derecho a cargo de los más destacados profesionales del país.
+                    </p>
+                    <p class="heroSubtitle">
+                        Con una amplia gama de árbitros peruanos quienes desarrollan el arbitraje de forma imparcial, justa
                     </p>
                     <a href="#contacto" class="contactButton">Contáctanos</a>
                     </div>
@@ -196,106 +169,17 @@
                 </div>
             </div>
         </section>
-        <section id="contacto" class="contact-section">
-            <div class="contact-container">
-                <h2  class="contact-heading">Contáctanos</h2>
-                <p>Comuníquese con nosotros y nos comunicaremos con usted a la velocidad de la luz.</p>
-                <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Aquiles Aurora" required />
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="hola@gmail.com" pattern="[^ @]*@[^ @]*" required="" />
-                </div>
-                <div class="form-group">
-                    <label for="reason">Motivo</label>
-                    <input type="text" id="reason" name="reason" placeholder="Por ejemplo, información, reclamo, asesoría" required />
-                </div>
-                <div class="form-group">
-                    <label for="message">Descripción</label>
-                    <textarea id="message" name="message" placeholder="Ingresa tu mensaje aqui" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    
-<!-- ohh -->
-    <footer class="footer">
-        <div class="contenedor-footer">
-            <div class="footer-arriba">
-                <div class="footer-img">
-                    <a href="/">
-                        <img class="logo" src="build/img/logoblanco.webp" alt="Logo Centro de Arbitraje">
-                    </a>
-                </div>
-                <nav class="c-nav-f">
-                    <div class="c1-nav-f">
-                        <div class="t-nav-f"><p>Navegacion</p></div>
-                        <div class="c2-nav-f">
-                            <p><a href="nosotros.html">Nosotros</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="servicios.html">Servicios</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="nominaDeArbitros.html">Nómina de Árbitros</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="escuelaDeArbitraje.html">Escuela de Arbitraje</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="contactenos.html">Contactenos</a></p>
-                        </div>
-                    </div><!-- c1-nav-f -->
-                    <div class="c1-nav-f">
-                        <div class="t-nav-f"><p>Navegacion</p></div>
-                        <div class="c2-nav-f">
-                            <p><a href="nosotros.html">Nosotros</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="servicios.html">Servicios</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="nominaDeArbitros.html">Nómina de Árbitros</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="escuelaDeArbitraje.html">Escuela de Arbitraje</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="contactenos.html">Contactenos</a></p>
-                        </div>
-                    </div><!-- c1-nav-f -->
-                    <div class="c1-nav-f">
-                        <div class="t-nav-f"><p>Navegacion</p></div>
-                        <div class="c2-nav-f">
-                            <p><a href="nosotros.html">Nosotros</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="servicios.html">Servicios</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="nominaDeArbitros.html">Nómina de Árbitros</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="escuelaDeArbitraje.html">Escuela de Arbitraje</a></p>
-                        </div>
-                        <div class="c2-nav-f">
-                            <p><a href="contactenos.html">Contactenos</a></p>
-                        </div>
-                    </div><!-- c1-nav-f -->
-                </nav><!-- c-nav-f -->
-            </div><!-- footer-header -->            
-            <div class="footer-abajo">
-                <div class="contenedor-copyright">
-                    <p class="copyright">&copy; 2024 Centro de Arbitraje <a href="/">CEAR</a> de la Cámara Nacional de Comercio del Perú</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <!-- start contacto -->
+        <?php
+        include "./includes/templates/contacto.php";
+        ?>
+        <!-- end contacto -->
+    </main>    
+    <!-- start footer -->
+    <?php
+    include "./includes/templates/footer.php";
+    ?>
+    <!-- end footer -->
 
     <!-- Linking SwiperJS script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

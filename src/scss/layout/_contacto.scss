@@ -62,6 +62,7 @@ $color-error: $rojoOscuro;
   .contact-heading {
     @include text-style(#490906, 5rem, $black);
     text-align: start;
+    overflow: visible;
     margin-bottom: 3rem;
   }
 
