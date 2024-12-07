@@ -121,8 +121,12 @@
     <?php
     include "./includes/templates/footertail.php";
     ?>
-    
-        
+
+    <!-- start icon whatsapp -->
+    <?php
+    include "./includes/templates/whastapp.php";
+    ?>
+    <!-- end icon whatsapp -->
 
 </body>
 </html>

@@ -176,6 +176,11 @@
             </form>
         </div>
     </div>
+    <!-- start icon whatsapp -->
+    <?php
+    include "./includes/templates/whastapp.php";
+    ?>
+    <!-- end icon whatsapp -->
 
     <script>
         const textarea = document.getElementById('reclamo');

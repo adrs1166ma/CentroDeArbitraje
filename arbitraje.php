@@ -143,7 +143,7 @@
                         </div>
                     </div>
                     <div class="pt-4">
-                        <h3 class="text-xl font-bold text-gray-900 mt-4">Consultoría de Contratos</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mt-4">Evaluación de Casos</h3>
                         <p class="mt-4 text-gray-500">
                             Análisis exhaustivo de casos legales para determinar la mejor estrategia.
                         </p>                        
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     <div class="pt-4">
-                        <h3 class="text-xl font-bold text-gray-900 mt-4">Consultoría de Contratos</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mt-4">Mediación Familiar</h3>
                         <p class="mt-4 text-gray-500">
                             Resolución de conflictos familiares con enfoque en la armonía y el entendimiento.
                         </p>                        
@@ -204,70 +204,56 @@
                 <div>
                     <h2 class="text-2xl font-extrabold text-[#e8241a] sm:text-3xl">
                         Contacta con Nosotros
-                    </h2>                    <div class="mt-3">
+                    </h2>                    
+                    <div class="mt-3">
                         <p class="text-lg text-gray-500">
                             Estamos aquí para ayudarte. Contáctanos para una consulta inicial gratuita.
-                        </p>                    </div>
+                        </p>                    
+                    </div>
                     <div class="mt-9">
                         <div class="flex">
                             <div class="flex-shrink-0">                                
                                 <i class="fas fa-phone text-custom"></i>
                             </div>
                             <div class="ml-3 text-base text-gray-500">                                
-                                <p>+34 900 123 456</p>
-                                <p class="mt-1">Lun-Vie 9:00-18:00</p>
-                            </div>                        </div>
+                                <p>+51 953 287 062</p>
+                                <p class="mt-1">
+                                    Lunes a Viernes: 9:00 AM - 6:00 PM
+                                    <br>
+                                    Sábado: 9:00 AM - 1:00 PM
+                                </p>
+                            </div>                        
+                        </div>
                         <div class="mt-6 flex">
                             <div class="flex-shrink-0">                                
                                 <i class="fas fa-envelope text-custom"></i>
                             </div>
                             <div class="ml-3 text-base text-gray-500">                                
-                                <p>contacto@arbitraje.com</p>
+                                <p>direccionejecutiva@camaranacional.org.pe</p>
                             </div>
                         </div>
-                    </div>                </div>
+                    </div>                
+                </div>
                 <div class="mt-12 sm:mt-16 md:mt-0">
-                <form class="max-w-2xl mx-auto">                        
-                    <div class="grid grid-cols-1 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Nombre completo</label>
-                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom">                            
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Correo electrónico</label>
-                                <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom">                            
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Servicio de interés</label>
-                                <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom">                                    
-                                    <option>Centro de Conciliación</option>
-                                    <option>Asesoría Legal</option>                                    
-                                    <option>Consultoría de Contratos</option>
-                                    <option>Evaluación de Casos</option>                                    
-                                    <option>Mediación Familiar</option>
-                                    <option>Otro</option>
-                                </select>
-                            </div>                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Mensaje</label>                                
-                                <textarea rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom">
-
-                                </textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="!rounded-button w-full bg-[#e8241a] text-white px-6 py-3 hover:bg-[#a31a13] transition-colors">                                    
-                                    Enviar mensaje
-                                </button>
-                            </div>
-                        </div>                    
-                    </form>                
+                    <!-- start contacto -->
+                    <?php
+                    include "./includes/templates/contacto.php";
+                    ?>
+                    <!-- end contacto -->                
                 </div>
             </div>
         </div>
     </div>
-
+    
     <?php
     include "./includes/templates/footertail.php";
     ?>
+    
+    <!-- start icon whatsapp -->
+    <?php
+    include "./includes/templates/whastapp.php";
+    ?>
+    <!-- end icon whatsapp -->
     
 </body>
 </html>
